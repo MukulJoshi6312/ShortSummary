@@ -3,6 +3,11 @@ import React from "react";
 import { logo } from "../assets";
 
 const Hero = () => {
+
+  const handleGithubOpen = () => {
+    console.log("Working")
+    window.open("https://github.com/MukulJoshi6312/ShortSummary/", "_blank");
+  };
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
@@ -10,9 +15,7 @@ const Hero = () => {
 
         <button
           type='button'
-          onClick={() =>
-            window.open("https://github.com/TidbitsJS/Summize", "_blank")
-          }
+          onClick={handleGithubOpen}
           className='black_btn'
         >
           GitHub
